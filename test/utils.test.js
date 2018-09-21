@@ -111,7 +111,7 @@ describe('checkParents()', () => {
                           '}').first.first
     let cssTwo = parse('.div {' +
                           'grid-auto-rows: auto;' +
-                          '}')
+                          '}').first.first
     expect(utils.checkParents(cssOne, 'supports', 'grid-auto-rows'))
       .toBeTruthy()
     expect(utils.checkParents(cssTwo, 'supports', 'grid-auto-rows'))
